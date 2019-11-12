@@ -1,0 +1,1 @@
+# dropwizard-guice-springDataJPA-hibernate
