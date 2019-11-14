@@ -37,7 +37,7 @@
     <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
     <junit.version>4.12</junit.version>
     <mockito-core.version>2.23.0</mockito-core.version>
-    <spring-data-jpa.version>2.1.5.RELEASE</spring-data-jpa.version>
+    <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
     <spring.version>5.0.12.RELEASE</spring.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
   </properties>
