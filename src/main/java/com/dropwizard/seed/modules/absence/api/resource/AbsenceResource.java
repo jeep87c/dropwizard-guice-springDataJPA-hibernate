@@ -6,18 +6,22 @@ import com.dropwizard.seed.modules.absence.api.mapper.AbsenceMapper;
 import com.dropwizard.seed.modules.absence.api.mapper.ReasonMapper;
 import com.dropwizard.seed.modules.absence.dal.repository.AbsenceRepository;
 import com.dropwizard.seed.modules.absence.dal.repository.ReasonRepository;
-
 import com.dropwizard.seed.modules.absence.domain.Absence;
-import javax.inject.Inject;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
 import java.net.URI;
 import java.util.UUID;
 import java.util.stream.Collectors;
+import javax.inject.Inject;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 @Path(AbsenceResource.PATH_ABSENCE)
 @Produces(MediaType.APPLICATION_JSON)

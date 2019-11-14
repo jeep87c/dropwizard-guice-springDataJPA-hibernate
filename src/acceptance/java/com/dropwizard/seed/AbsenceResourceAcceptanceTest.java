@@ -17,11 +17,8 @@ import org.junit.Test;
 public class AbsenceResourceAcceptanceTest extends AbstractResourceAcceptanceTest {
 
   private static final String ABSENCE_PATH = "absences";
-  private static final String REASONS_PATH = "absences/reasons";
   private static final Instant STARTS_ON = Instant.parse("2017-03-01T17:27:49.072881Z");
   private static final Instant ENDS_ON = Instant.parse("2018-03-01T17:27:49.072881Z");
-  private static final Instant STARTS_ON_2 = Instant.parse("2016-03-01T17:27:49.072881Z");
-  private static final Instant ENDS_ON_2 = Instant.parse("2019-03-01T17:27:49.072881Z");
   private static final Instant DATE_1 = Instant.parse("2017-03-02T17:27:49.072881Z");
   private static final Instant DATE_2 = Instant.parse("2017-03-03T17:27:49.072881Z");
   private static final Instant DATE_3 = Instant.parse("2017-03-04T17:27:49.072881Z");
@@ -36,7 +33,6 @@ public class AbsenceResourceAcceptanceTest extends AbstractResourceAcceptanceTes
   private static final boolean PAID = true;
   private static final String COMMENT = "Citrouille";
   private static final String REASON_NAME = "Pumpkin spice latte";
-  private static final String REASON_NAME2 = "Moka Pistache soya";
 
   private final AbsenceEntityFixture absenceEntityFixture = injector.getInstance(AbsenceEntityFixture.class);
   private final ReasonEntityFixture reasonEntityFixture = injector.getInstance(ReasonEntityFixture.class);
