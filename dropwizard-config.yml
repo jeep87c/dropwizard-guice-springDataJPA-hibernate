@@ -1,0 +1,28 @@
+stage: ${STAGE}
+
+# HTTP-specific options.
+server:
+  type: simple
+  rootPath: /*
+  applicationContextPath: /api
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8080
+
+  requestLog:
+    appenders:
+      - type: console
+        timeZone: UTC
+        target: STDOUT
+
+logging:
+  level: INFO
+  loggers:
+    com.smoketurner.dropwizard.graphql: DEBUG
+    com.example.helloworld: DEBUG
+    graphql: DEBUG
+  appenders:
+    - type: console
+      timeZone: UTC
+      target: STDOUT
