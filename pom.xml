@@ -29,7 +29,7 @@
     <google.guice.version>4.2.2</google.guice.version>
     <google.truth.version>0.42</google.truth.version>
     <guava.version>27.1-jre</guava.version>
-    <hibernate-core.version>5.4.1.Final</hibernate-core.version>
+    <hibernate-core.version>5.4.24.Final</hibernate-core.version>
     <hibernate-validator.version>5.4.2.Final</hibernate-validator.version>
     <hsqldb.version>2.4.1</hsqldb.version>
     <javassist.version>3.24.1-GA</javassist.version>
